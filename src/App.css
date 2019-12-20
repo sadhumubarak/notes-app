@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+body{
+  background-color: #2E4158;
+  font-family: 'Raleway', sans-serif;
+}
+.App {
+  height: 100vh;
+  display: flex;
+  color: rgb(231, 231, 231);
+}
+
+.App__Form {
+  height: 600px; 
+  background-color: #2E4158;
+  padding: 25px 40px;
+  overflow: auto;
+}
+
+.PageSwitcher {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+}
+
+.PageSwitcher__Item {
+  background-color: #4C5D72;
+  color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: .9em;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.PageSwitcher__Item--Active {
+  background-color: #5ED0C0;
+  color: rgb(255, 255, 255);
+}
+
+.PageSwitcher__Item:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.PageSwitcher__Item:last-child {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.FormTitle {
+  width: 500px;
+  color: rgb(187, 187, 187);
+  font-weight: 300;
+  margin-left: 35%;
+}
+
+.FormTitle__Link {
+  color: rgb(233, 233, 233);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7em;
+  padding-bottom: 5px;
+}
+
+.FormTitle__Link:first-child {
+  margin-left: 0;
+}
+
+.FormTitle__Link--Active {
+  color: white;
+  border-bottom: 1px solid #199087;
+}
+
+.FormCenters{
+  margin-top: 15%;
+}
+.FormField {
+  width: 600px;
+  margin:20px 0 40px 25%;
+  
+}
+
+.FormField__Label {
+  display: block;
+  text-transform: uppercase;
+  font-size: .9em;
+  color: white;
+}
+.FormField__Input {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  outline: none;
+  border-bottom: 1px solid #445366;
+  font-size: 1em;
+  font-weight: 300;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.FormField__Input::placeholder {
+  color: rgb(33, 39, 48);
+}
+
+.FormField__Button {
+  background-color: #52C4B9;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 70px;
+  font-size: .8em;
+  font-weight: 500;
+}
+
+.FormField__Link {
+  color: #66707D;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1.5px solid #225E62;
+  padding-bottom: 5px;
+}
+
+.FormField__CheckboxLabel {
+  color: #646F7D;
+  font-size: .9em;
+}
+
+.FormField__Checkbox {
+  position: relative;
+  top: 1.5px;
+}
+
+.FormField__TermsLink {
+  color: white;
+  border-bottom: 1px solid #199087;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 2px;
+  margin-left: 5px;
+}
+
+/* DASHBOARD DESIGNS */
+
+
+.container{
+  margin:0px;
+  padding:0px ; 
+ 
+}
+header{
+  position:fixed;
+  top:0;
+  width: 100%;
+  height: 60px;
+  margin:0px;
+  background-color: rgb(65, 88, 116);
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  margin-left: 10px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  line-height: 10px;
+  padding: 0px;
+  color:#fff;
+  height: 60px;
+
+}
+.btn_lo {
+  margin: 10px;
+  float: right;
+  top:0px;
+  left:5px;
+  width:100px;
+  height:35px;
+  border:none;
+  background-color: rgb(243, 124, 55);
+  border-radius: 10px;
+}
+
+.btn{
+  
+  width: 60px;
+  height: 40px;
+  background-color: rgb(238, 70, 33);
+  position: fixed;
+  right: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  line-height: 35px;
+  font-size: 30px;
+  font-weight: bold;
+  color:#fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.8);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.8);
+  transition: transform .06s ease;
+}
+
+i{
+  color: #fff;
+  z-index: 9;
+}
+.modal{
+  position: fixed;
+}
+
+.bField {
+  
+  position: relative;
+  padding:5px;
+  background-color:transparent;
+  color:#fff;
+  border:1px solid rgb(243, 124, 55);
+  border-radius:5px;
+  margin-left:0px;
+  width:95%;
+  height: 40px;
+  
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/*  FEED BACK FORMS */
+
+.list{
+  margin:auto;
+}
+.form{
+  width: 100%;
+  height: 50px;
+  background-color:rgb(14, 41, 80);
+  color:rgb(255, 255, 255);
+  margin-top:60px;
+}
+
+.t_field{
+  width: 40%;
+  height:30px;
+  border:none;
+  margin-left:5px;
+  margin-top:10px;
+  border-radius:5px;
+  background-color:rgb(106, 127, 153);
+  color: #fff;
+  padding:5px;
+}
+.btn_add{
+  width: 15%;
+  height:30px;
+  background-color: rgb(238, 70, 33);
+  border:none;
+  margin-left:10px ;
+  color: #fff;
+  border-radius:5px;
+}
+
+.card_container{
+    display: flex;
+    margin-top:50px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.card{
+  
+  margin:auto;
+  width: 170px;
+  height: 170px;
+  z-index: y;
+  margin-right:10px;
+  background-color: rgb(191, 223, 245);
+  border-radius: 5px;
+  border-bottom: 2px solid rgb(3, 47, 94);
+  align-items: center;
+  }
+
+
+.card .title{
+  padding: 5px;
+}
+
+.card .desc{
+  padding-left: 10px;
+  
+}
